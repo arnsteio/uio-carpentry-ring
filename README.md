@@ -2,6 +2,8 @@
 
 carpentryAtUioSignetRing.stl: File ready for printing. Assumes you finger has a 22mm diameter.
 
-ring01.scad: source code. Use this if your fingers aren't 22mm in diameter.
+ring.scad: source code. Use this if your fingers aren't 22mm in diameter. Variables are according to [Thingivere's] (http://thingiverse.com) API. 
 
-CarpentryAtUio.png: logo source file
+CarpentryAtUio.png: logo file
+
+CarpentryAtUio.xcf: logo source file
