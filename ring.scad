@@ -30,8 +30,12 @@ module ring_band(diameter, bandwidth)
 
 module build()
 	{
-	ring_band(fingerDiameter, ringBandWidth);
-	translate([-fingerDiameter/2, -fingerDiameter/2-ringBandWidth+ringBandWidth/4, -logoVerticalHeight/2]) rotate([90,0,0]) resize([fingerDiameter,0,0], auto=true) ring_face(fingerDiameter);
+	difference()
+        {
+            ring_band(fingerDiameter, ringBandWidth);
+            translate([0,-10-fingerDiameter/2+ringBandWidth/2, 0]) cube([20, 20, 20], center=true);
+        }
+        translate([-fingerDiameter/2, -fingerDiameter/2-ringBandWidth+ringBandWidth/4, -logoVerticalHeight/2]) rotate([90,0,0]) resize([fingerDiameter,0,0], auto=true) ring_face(fingerDiameter);
 	}
 
 // test
